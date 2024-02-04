@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.links {
+    @apply transition-all;
+}
+
+.linksHover {
+    @apply hover:text-[#f58634] hover:border-b;
+}
