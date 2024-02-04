@@ -544,36 +544,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
 }
 
 .flex {
   display: flex;
-}
-
-.size-12 {
-  width: 3rem;
-  height: 3rem;
-}
-
-.size-1 {
-  width: 0.25rem;
-  height: 0.25rem;
-}
-
-.size-5 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.size-80 {
-  width: 20rem;
-  height: 20rem;
 }
 
 .min-h-screen {
@@ -592,16 +568,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[2rem\] {
-  gap: 2rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-\[2rem\] {
+  gap: 2rem;
 }
 
 .bg-\[\#242424\] {
@@ -618,12 +590,12 @@ video {
   padding: 1rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {

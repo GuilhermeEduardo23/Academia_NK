@@ -1,3 +1,5 @@
+
+
 const Header = () => {
   return (
     <header className="text-white flex items-center justify-between p-4">
@@ -18,6 +20,13 @@ const Header = () => {
                 <a href="#contact" className="links linksHover">Contato</a>
               </li>
             </ul>
+
+            <div>
+              <button>
+
+              </button>
+              <button></button>
+            </div>
         </nav>
     </header>
   )
