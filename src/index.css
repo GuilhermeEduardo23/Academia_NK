@@ -7,5 +7,21 @@
 }
 
 .linksHover {
-    @apply hover:text-[#f58634] hover:border-b;
+    @apply hover:text-[#f58634];
+}
+
+.socialLinks {
+    @apply flex items-center justify-center gap-1 p-2 rounded-lg;
+}
+
+::-webkit-scrollbar {
+    @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-[#f5b181] rounded-xl hover:bg-[#f58634];
 }
