@@ -25,3 +25,7 @@
 ::-webkit-scrollbar-thumb {
     @apply bg-[#f5b181] rounded-xl hover:bg-[#f58634];
 }
+
+.border_orange {
+    @apply border-solid border-2 border-b-[#f58634] border-t-0 border-r-0 border-l-0;
+}

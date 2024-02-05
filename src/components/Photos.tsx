@@ -17,19 +17,19 @@ const Photos = () => {
   ];
 
   return (
-    <div id="photos" className="bg-red-500 w-2/4">
-      <h1>Fotos</h1>
-      
+    <div id="photos" className="">
       <Swiper
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation
+        className="w-2/4"
       >
         {images.map((item) => (
           <SwiperSlide key={item.id}>
             <img 
               src={item.path} 
               alt={item.alt}
+              className="w-full object-cover"
             />
           </SwiperSlide>
         ))}

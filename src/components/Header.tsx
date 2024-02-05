@@ -14,7 +14,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="text-white flex items-center justify-between p-4 mb-20">
+    <header className="text-white flex items-center justify-between p-4 mb-20 border_orange">
         <h1 className="font-bold text-[1.8rem]">Academia N<span className="text-[#f58634]">K</span></h1>
 
         <nav className='flex'>
@@ -27,8 +27,8 @@ const Header = () => {
             </ul>
         </nav>
 
-        <div className='flex gap-2'>
-          <a href='https://www.instagram.com/academia_nk/' className='socialLinks bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 links hover:bg-white' target='_blank' >
+        <div className='flex gap-4'>
+          <a href='https://www.instagram.com/academia_nk/' className='socialLinks bg-pink-500 links hover:bg-white hover:text-pink-500' target='_blank'>
             <FaInstagram /> Instagram
           </a>
           <a href='https://wa.me/5564996684840' className='socialLinks bg-[#075E54] links hover:bg-white hover:text-[#075E54]' target='_blank'>
