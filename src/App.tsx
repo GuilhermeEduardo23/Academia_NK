@@ -4,9 +4,17 @@ import Home from "./components/Home"
 import Location from "./components/Location"
 import Photos from "./components/Photos"
 
+import { register } from "swiper/element-bundle";
+
+register();
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 function App() {
   return (
-    <div className="font-poppins bg-[#242424] min-h-screen text-white pr-2 pl-2 flex flex-col gap-44">
+    <div className="font-poppins bg-[#242424] text-white pr-2 pl-2 flex-wrap">
       <Header />
       <Home />
       <Photos />

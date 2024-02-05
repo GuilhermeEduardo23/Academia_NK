@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
 
 interface Image {
   id: string;
@@ -18,16 +17,20 @@ const Photos = () => {
   ];
 
   return (
-    <div id="photos">
+    <div id="photos" className="bg-red-500 w-2/4">
       <h1>Fotos</h1>
       
       <Swiper
         slidesPerView={1}
         pagination={{ clickable: true }}
+        navigation
       >
         {images.map((item) => (
           <SwiperSlide key={item.id}>
-            <img src={item.path} alt={item.alt}/>
+            <img 
+              src={item.path} 
+              alt={item.alt}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -14,7 +14,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="text-white flex items-center justify-between p-4">
+    <header className="text-white flex items-center justify-between p-4 mb-20">
         <h1 className="font-bold text-[1.8rem]">Academia N<span className="text-[#f58634]">K</span></h1>
 
         <nav className='flex'>
