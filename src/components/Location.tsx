@@ -2,7 +2,7 @@ import { FaRegClock } from "react-icons/fa";
 
 const Location = () => {
   return (
-    <div id="location" className="flex flex-col items-center p-4">
+    <div id="location" className="flex flex-col items-center p-4 mb-4">
       <h1 className="text-4xl text-center font-bold mb-4">Onde Estamos</h1>
 
       <div className="flex items-center gap-10">
