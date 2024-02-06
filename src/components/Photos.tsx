@@ -17,12 +17,12 @@ const Photos = () => {
   ];
 
   return (
-    <div id="photos" className="">
+    <div id="photos" className="p-4 mb-4">
       <Swiper
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation
-        className="w-2/4"
+        className="w-[40%]"
       >
         {images.map((item) => (
           <SwiperSlide key={item.id}>
