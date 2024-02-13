@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { IoIosMenu } from "react-icons/io";
+import { IoIosMenu, IoMdClose } from "react-icons/io";
 
 interface link {
   id: string;
@@ -44,8 +44,9 @@ const Header = () => {
           </a>
         </nav>
         
-        <IoIosMenu className='text-3xl cursor-pointer md:hidden' onClick={checkClick}/>
-
+        
+        {!click ? <IoMdClose onClick={checkClick}/> : <IoIosMenu className='text-3xl cursor-pointer md:hidden' onClick={checkClick}/>}
+       
     </header>
   )
 }
