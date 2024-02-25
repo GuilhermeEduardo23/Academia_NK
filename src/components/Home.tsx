@@ -1,8 +1,8 @@
 const Home = () => {
   return (
     <section id="home" className="text-center font-bold flex flex-col items-center justify-around text-3xl gap-10 p-4">
-      <p className="leading-[50px]">Malhar não fica mais fácil, você que fica melhor a cada treino!</p>
-      <p className="leading-[50px]">"Exercícios não mudam apenas o seu corpo. Muda a sua mente, atitudes e o seu humor!" 💪</p>
+      <p className="leading-[50px]">"Malhar não fica mais fácil, você que fica melhor a cada treino!" 🏋🏻‍♂️🏋🏻‍♀️</p>
+      <p className="leading-[50px]">"Exercícios não mudam apenas o seu corpo. Muda a sua mente, atitudes e o seu humor!" 💪🏻</p>
     </section>
   )
 }
