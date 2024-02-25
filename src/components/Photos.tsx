@@ -19,7 +19,7 @@ const Photos = () => {
   return (
     <div id="photos" className="p-4 mb-4">
       <Swiper
-        slidesPerView={1}
+        slidesPerView={1.2}
         pagination={{ clickable: true }}
         navigation
         className="md:w-2/4"
