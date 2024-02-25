@@ -22,7 +22,7 @@ const Photos = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation
-        className="w-[40%]"
+        className="md:w-2/4"
       >
         {images.map((item) => (
           <SwiperSlide key={item.id}>
