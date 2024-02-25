@@ -5,7 +5,10 @@ const Footer = () => {
           {new Date().getFullYear()} &nbsp;
           Todos os direitos reservados.
         </p>
-        <p><span className="font-bold">Desenvolvido por:</span> Guilherme Eduardo</p>
+        <p>
+          <span className="font-bold">Desenvolvido por: </span> 
+          <a href="https://link-tree-liart-gamma.vercel.app/" className="links linksHover" target="_blank">Guilherme Eduardo</a>
+        </p>
     </footer>
   )
 }
