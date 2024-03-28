@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 
 interface Image {
   id: string;
@@ -17,7 +18,11 @@ const Photos = () => {
   ];
 
   return (
-    <div id="photos" className="p-4 mb-4">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      id="photos" className="p-4 mb-4">
       <Swiper
         slidesPerView={1.2}
         pagination={{ clickable: true }}
@@ -34,7 +39,7 @@ const Photos = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   )
 }
 
