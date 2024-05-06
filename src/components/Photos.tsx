@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
-
 interface Image {
   id: string;
   path: string;
@@ -22,7 +21,10 @@ const Photos = () => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      id="photos" className="p-4 mb-4">
+      id="photos" className="p-4 mb-4 flex flex-col gap-5 bg-[#051119]">
+
+      <h1 className="text-3xl text-center font-bold">Veja fotos da academia</h1>
+
       <Swiper
         slidesPerView={1.2}
         pagination={{ clickable: true }}

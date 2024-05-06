@@ -1,19 +1,25 @@
-import { motion } from "framer-motion";
+import "./Home.css";
+import { useFetch } from "../hooks/useFetch";
 
 const Home = () => {
+  const min: number = 1;
+  const max: number = 25;
+  const id: number = Math.floor(Math.random() * (max - min) + min);
+
+  const API_URL: string = import.meta.env.VITE_API_URL;
+  const url: string = `${API_URL}${id.toString()}`;
+  const {sentence, loading, error} = useFetch(url);
+  
   return (
-    <motion.section
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01]
-      }}
-      id="home" className="text-center font-bold flex flex-col items-center justify-around text-2xl gap-10 p-4">
-      <p className="leading-[50px]">"Malhar não fica mais fácil, você que fica melhor a cada treino!" 🏋🏻‍♂️🏋🏻‍♀️</p>
-      <p className="leading-[50px]">"Exercícios não mudam apenas o seu corpo. Muda a sua mente, atitudes e o seu humor!" 💪🏻</p>
-    </motion.section>
+    <section
+      id="home" className="text-center font-bold flex flex-col items-center justify-around text-2xl gap-5 p-5 bg-[#121813]">
+      <h1 className="text-4xl text-center font-bold tracking-in-expand">Frase do Dia</h1>
+      <p>{sentence?.sentence}</p>
+      <p className="flex items-center">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20activities/Man%20Lifting%20Weights%20Light%20Skin%20Tone.png" alt="Man Lifting Weights Light Skin Tone" width="150" height="150" />
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20activities/Man%20Lifting%20Weights%20Dark%20Skin%20Tone.png" alt="Man Lifting Weights Dark Skin Tone" width="150" height="150" />
+      </p>
+    </section>
   )
 }
 

@@ -14,7 +14,7 @@ import "swiper/css/scrollbar";
 
 function App() {
   return (
-    <div className="font-poppins bg-[#242424] text-white">
+    <div className="font-poppins bg-[#051119] text-white">
       <Header />
       <Home />
       <Photos />
