@@ -8,7 +8,7 @@ const Home = () => {
 
   const API_URL: string = import.meta.env.VITE_API_URL;
   const url: string = `${API_URL}${id.toString()}`;
-  const {sentence, loading, error} = useFetch(url);
+  const {sentence} = useFetch(url);
   
   return (
     <section
