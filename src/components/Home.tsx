@@ -13,8 +13,7 @@ const Home = () => {
   return (
     <section
       id="home" className="text-center font-bold flex flex-col items-center justify-around text-2xl gap-5 p-5 bg-[#121813]">
-      <h1 className="text-4xl text-center font-bold tracking-in-expand">Frase do Dia</h1>
-      <p>{sentence?.sentence}</p>
+      <p className="w-3/5">{sentence?.sentence}</p>
       <p className="flex items-center">
         <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20activities/Man%20Lifting%20Weights%20Light%20Skin%20Tone.png" alt="Man Lifting Weights Light Skin Tone" width="150" height="150" />
         <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20activities/Man%20Lifting%20Weights%20Dark%20Skin%20Tone.png" alt="Man Lifting Weights Dark Skin Tone" width="150" height="150" />

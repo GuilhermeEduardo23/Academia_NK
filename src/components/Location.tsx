@@ -4,7 +4,7 @@ import location from "/public/icons/location.png";
 
 const Location = () => {
   return (
-    <div id="location" className="flex flex-col mb-4 w-full bg-[#121813]">
+    <div id="location" className="flex flex-col mb-4 w-full bg-[#121813] p-5">
       <h1 className="text-4xl text-center font-bold mb-4">Onde Estamos</h1>
 
       <div className="flex flex-col gap-5">
