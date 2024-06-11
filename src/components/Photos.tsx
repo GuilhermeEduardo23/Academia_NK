@@ -13,29 +13,28 @@ const Photos = () => {
       path: "/images/motivacional1.png",
       alt: "Chega de dar desculpas. Bora treinar?",
     },
-    { id: "2", path: "/images/legpress.png", alt: "Colocação do Pé Leg Press" },
     {
-      id: "2",
+      id: "3",
       path: "/images/motivacional2.png",
       alt: "Foco, dedicação, motivação",
     },
     {
-      id: "3",
+      id: "4",
       path: "/images/motivacional3.png",
       alt: "Trace novos objetivos para sua vida",
     },
     {
-      id: "4",
+      id: "5",
       path: "/images/motivacional4.png",
       alt: "Conquiste o corpo dos seus sonhos.",
     },
     {
-      id: "5",
+      id: "6",
       path: "/images/aulaKaratê.png",
       alt: "Foto do treino de Karatê",
     },
     {
-      id: "6",
+      id: "7",
       path: "/images/informativo.png",
       alt: "Agende seu horário de treino.",
     },
@@ -54,7 +53,7 @@ const Photos = () => {
       </h1>
 
       <Swiper
-        slidesPerView={1}
+        slidesPerView={1.2}
         pagination={{ clickable: true }}
         navigation
         className="w-full lg:w-3/6"
