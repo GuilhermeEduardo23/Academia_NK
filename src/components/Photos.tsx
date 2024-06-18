@@ -46,7 +46,7 @@ const Photos = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
       id="photos"
-      className="p-5 flex flex-col gap-8"
+      className="flex flex-col p-5 gap-8 bg-[#000000]"
     >
       <h1 className="text-4xl text-center font-bold mb-4 uppercase">
         Fotos da academia

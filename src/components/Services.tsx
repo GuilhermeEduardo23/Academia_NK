@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface IImages {
   id: string;
   url: string;
@@ -12,7 +14,11 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="flex flex-col items-center justify-center text-center text-2xl p-5 bg-[#121813]">
+    <motion.section
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      id="services" className="flex flex-col items-center justify-center text-center text-2xl p-5 bg-[#121813]">
       <h1 className="text-4xl text-center font-bold mb-4 uppercase">
         O Que Oferecemos
       </h1>
@@ -24,7 +30,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
